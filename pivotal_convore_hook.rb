@@ -28,6 +28,6 @@ end
 def message
   input = Crack::XML.parse(request.body)
   description = input['activity']['description']
-  url = input['activity']['stories']['story']['url']
-  "#{description} #{url}"
+  #url = input['activity']['stories']['story']['url']
+  "#{description}"
 end
